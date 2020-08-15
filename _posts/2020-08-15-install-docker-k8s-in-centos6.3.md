@@ -1,3 +1,17 @@
+---
+layout:     post
+title:      k8s and docker install
+subtitle:   centos6.3 k8s 集群搭建
+date:       2020-08-15
+author:     ZC
+header-img: 
+catalog: 	 true
+tags:
+    - docker
+    - k8s
+    - linux
+---
+
 ### centos 6.3, kernel 3.10 install docker and k8s
 #### install docker
 - download builded docker-ce from [url](https://mirrors.aliyun.com/docker-ce/linux/static/stable/x86_64/docker-17.03.2-ce.tgz)
