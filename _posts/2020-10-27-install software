@@ -1,0 +1,43 @@
+---
+layout:     post
+title:      install software
+subtitle:   ubuntu install rpm package
+date:       2020-10-27
+author:     ZC
+header-img: 
+catalog: 	 true
+tags:
+    - linux
+---
+
+
+
+
+Step 1: Add the Universe Repository
+For the first method, you will need a software package called “Alien”, which is software designed to convert .rpm files into .deb files. In order to install Alien, you will need to add a software repository called “Universe”. Open a terminal and type:
+
+sudo add-apt-repository universe
+Step 2: Update apt-get
+Enter your user account password when the terminal prompts you to do so. Now, you need to update apt-get in order for the repository to be utilized.
+
+sudo apt-get update
+install rpm packages on ubuntu
+Step 3: Install Alien package
+Now that we have the Universe repository added, install Alien by executing this command:
+
+sudo apt-get install alien
+Step 4: Convert .rpm package to .deb
+Once it is installed, make sure that the software package you have downloaded is an .rpm file. Go to the folder where your .rpm file is located. Once you have the .rpm file ready, simply run the command:
+
+sudo alien <name of package>.rpm
+Step 5: Install the Converted Package
+It may take a moment for the file to convert. Once it is done, install the file normally by using dpkg:
+
+sudo dpkg -i <name of package>.deb
+It should install like a regular .deb package file. You can now use your newly-installed software normally.
+
+Step 6: Install RPM Package Directly Onto the System on Ubuntu
+For the other method, Alien is also the software used to install RPM packages directly onto the system. Simply run the following command once you are in the same folder as the RPM package you wish to install.
+
+sudo alien -i <name of package>.rpm
+Give it a minute, and it should be installed on your system with no issues.
